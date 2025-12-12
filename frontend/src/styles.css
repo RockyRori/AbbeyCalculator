@@ -173,3 +173,24 @@ main {
   color: #777;
   margin-top: 0.5rem;
 }
+
+.panel-style .style-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.panel-style .style-label {
+  font-weight: 600;
+}
+.panel-style select {
+  min-width: 12rem;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.panel-style .style-hint {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #555;
+}

@@ -1,0 +1,310 @@
+[
+    {
+        "id": "pale_beer_green",
+        "name": {
+            "en": "Pale Beer Green",
+            "zh": "淡啤酒(绿)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 10,
+                "max": 30
+            },
+            "color": {
+                "min": 10,
+                "max": 40
+            },
+            "strength": {
+                "min": 10,
+                "max": 30
+            },
+            "foam": {
+                "min": 10,
+                "max": 40
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "standard_yeast"
+        ]
+    },
+    {
+        "id": "pale_beer_yellow",
+        "name": {
+            "en": "Pale Beer Yellow",
+            "zh": "淡啤酒(黄)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 10,
+                "max": 40
+            },
+            "color": {
+                "min": 10,
+                "max": 50
+            },
+            "strength": {
+                "min": 10,
+                "max": 40
+            },
+            "foam": {
+                "min": 0,
+                "max": 110
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "standard_yeast"
+        ]
+    },
+    {
+        "id": "golden_beer_green",
+        "name": {
+            "en": "Golden Beer Green",
+            "zh": "金色啤酒(绿)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 20,
+                "max": 40
+            },
+            "color": {
+                "min": 10,
+                "max": 40
+            },
+            "strength": {
+                "min": 20,
+                "max": 40
+            },
+            "foam": {
+                "min": 10,
+                "max": 40
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "standard_yeast",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "golden_beer_yellow",
+        "name": {
+            "en": "Golden Beer Yellow",
+            "zh": "金色啤酒(黄)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 10,
+                "max": 50
+            },
+            "color": {
+                "min": 10,
+                "max": 50
+            },
+            "strength": {
+                "min": 10,
+                "max": 50
+            },
+            "foam": {
+                "min": 0,
+                "max": 110
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "standard_yeast",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "aged_beer_green",
+        "name": {
+            "en": "Aged Beer Green",
+            "zh": "陈酿啤酒(绿)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 30,
+                "max": 60
+            },
+            "color": {
+                "min": 40,
+                "max": 60
+            },
+            "strength": {
+                "min": 20,
+                "max": 40
+            },
+            "foam": {
+                "min": 10,
+                "max": 40
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "dark_malt",
+            "standard_yeast",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "aged_beer_yellow",
+        "name": {
+            "en": "Aged Beer Yellow",
+            "zh": "陈酿啤酒(黄)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 20,
+                "max": 80
+            },
+            "color": {
+                "min": 30,
+                "max": 70
+            },
+            "strength": {
+                "min": 10,
+                "max": 50
+            },
+            "foam": {
+                "min": 0,
+                "max": 110
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "dark_malt",
+            "standard_yeast",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "herb_beer_green",
+        "name": {
+            "en": "Herb Beer Green",
+            "zh": "草药啤酒(绿)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 50,
+                "max": 90
+            },
+            "color": {
+                "min": 40,
+                "max": 60
+            },
+            "strength": {
+                "min": 30,
+                "max": 70
+            },
+            "foam": {
+                "min": 10,
+                "max": 40
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "amber_malt",
+            "standard_yeast",
+            "honey_sugar",
+            "eucalyptus_various",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "herb_beer_yellow",
+        "name": {
+            "en": "Herb Beer Yellow",
+            "zh": "草药啤酒(黄)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 40,
+                "max": 100
+            },
+            "color": {
+                "min": 30,
+                "max": 70
+            },
+            "strength": {
+                "min": 20,
+                "max": 80
+            },
+            "foam": {
+                "min": 0,
+                "max": 110
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "amber_malt",
+            "standard_yeast",
+            "honey_sugar",
+            "eucalyptus_various",
+            "herb_various"
+        ]
+    },
+    {
+        "id": "amber_beer_green",
+        "name": {
+            "en": "Amber Beer Green",
+            "zh": "琥珀啤酒(绿)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 30,
+                "max": 70
+            },
+            "color": {
+                "min": 30,
+                "max": 60
+            },
+            "strength": {
+                "min": 20,
+                "max": 70
+            },
+            "foam": {
+                "min": 40,
+                "max": 70
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "amber_malt",
+            "standard_yeast",
+            "standard_hop"
+        ]
+    },
+    {
+        "id": "amber_beer_yellow",
+        "name": {
+            "en": "Amber Beer Yellow",
+            "zh": "琥珀啤酒(黄)"
+        },
+        "virtues": {
+            "flavor": {
+                "min": 20,
+                "max": 80
+            },
+            "color": {
+                "min": 30,
+                "max": 70
+            },
+            "strength": {
+                "min": 20,
+                "max": 80
+            },
+            "foam": {
+                "min": 0,
+                "max": 110
+            }
+        },
+        "requiredIngredientIds": [
+            "pale_malt",
+            "amber_malt",
+            "standard_yeast",
+            "standard_hop"
+        ]
+    }
+]

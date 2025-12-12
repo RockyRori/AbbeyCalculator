@@ -6,7 +6,7 @@ export type VirtueKey = "flavor" | "color" | "strength" | "foam";
 
 export interface VirtueTarget {
   key: VirtueKey;
-  value: number;   // 0-100
+  value: number;   // 0-110
   min: number;     // lower bound
   max: number;     // upper bound
 }
@@ -34,4 +34,16 @@ export interface Ingredient {
   cost: number;
   required: boolean;
   enabled: boolean;
+}
+
+export interface VirtueRange {
+  min: number;
+  max: number;
+}
+
+export interface StylePreset {
+  id: string;
+  name: LocalizedName;
+  virtues: Record<VirtueKey, VirtueRange>;
+  requiredIngredientIds: string[];
 }

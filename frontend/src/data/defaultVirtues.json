@@ -1,0 +1,30 @@
+[
+  {
+    "key": "flavor",
+    "label": { "en": "Flavor", "zh": "风味" },
+    "value": 0,
+    "min": 0,
+    "max": 110
+  },
+  {
+    "key": "color",
+    "label": { "en": "Color", "zh": "颜色" },
+    "value": 0,
+    "min": 0,
+    "max": 110
+  },
+  {
+    "key": "strength",
+    "label": { "en": "Strength", "zh": "酒精" },
+    "value": 0,
+    "min": 0,
+    "max": 110
+  },
+  {
+    "key": "foam",
+    "label": { "en": "Foam", "zh": "泡沫" },
+    "value": 0,
+    "min": 0,
+    "max": 110
+  }
+]

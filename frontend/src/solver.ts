@@ -3,7 +3,7 @@ import type { Ingredient, VirtueKey, VirtueTarget } from "./types";
 
 export interface RecipeSolution {
   ingredients: { ingredient: Ingredient; count: number }[];
-  totals: Record<VirtueKey, number>; // 已裁剪到 0–100
+  totals: Record<VirtueKey, number>; // 已裁剪到 0–110
 }
 
 export interface SolveOptions {
@@ -42,10 +42,10 @@ export function solveRecipes(
     foam: 0,
   };
   const maxBound: Record<VirtueKey, number> = {
-    flavor: 100,
-    color: 100,
-    strength: 100,
-    foam: 100,
+    flavor: 110,
+    color: 110,
+    strength: 110,
+    foam: 110,
   };
 
   for (const t of targets) {
@@ -53,7 +53,7 @@ export function solveRecipes(
     maxBound[t.key] = t.max;
   }
 
-  // 原始和（允许负数 / 超 100）
+  // 原始和（允许负数 / 超 110）
   const sums: Record<VirtueKey, number> = {
     flavor: 0,
     color: 0,
@@ -79,7 +79,7 @@ export function solveRecipes(
       for (const k of VIRTUE_KEYS) {
         let v = sums[k];
         if (v < 0) v = 0;
-        else if (v > 100) v = 100;
+        else if (v > 110) v = 110;
         clamped[k] = v;
       }
 
@@ -123,7 +123,7 @@ export function solveRecipes(
 
     for (let c = minCount; c <= maxCountPerIngredient; c++) {
       for (const k of VIRTUE_KEYS) {
-        const delta = ing.virtues[k] ?? 0;
+        const delta = (ing.virtues[k] ?? 0) * 10;
         sums[k] = base[k] + c * delta;
       }
 

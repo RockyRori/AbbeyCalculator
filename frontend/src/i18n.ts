@@ -4,14 +4,16 @@ import type { Lang, VirtueKey, IngredientCategory } from "./types";
 type Dict = Record<string, { en: string; zh: string }>;
 
 export const dict: Dict = {
-  appTitle: { en: "Beer Recipe Solver", zh: "啤酒配方求解器" },
+  appTitle: { en: "Ale Abbey Beer Recipe Solver", zh: "修道院啤酒大亨————啤酒配方计算器" },
   subtitle: {
     en: "Design a recipe matching your desired flavor, color, strength and foam.",
-    zh: "根据你想要的风味、颜色、酒精度和泡沫感设计配方。",
+    zh: "根据你想要的 (风味、颜色、酒精、泡沫) 来设计配方。",
   },
   language: { en: "Language", zh: "语言" },
-  virtues: { en: "Virtues", zh: "指标设置" },
+  style: { en: "Style", zh: "风格" },
+  virtues: { en: "Virtues", zh: "指标" },
   ingredients: { en: "Ingredients", zh: "配料" },
+  custom: { en: "Custom", zh: "自定义" },
   results: { en: "Results", zh: "配方结果" },
   required: { en: "Required", zh: "必选" },
   optional: { en: "Optional", zh: "可选" },
@@ -35,9 +37,9 @@ export const categoryLabels: Record<
   yeast: { en: "Yeasts", zh: "酵母" },
   hop: { en: "Hops", zh: "酒花" },
   sugar: { en: "Sugar & Honey", zh: "糖与蜂蜜" },
-  various: { en: "Various", zh: "其他" },
   spice: { en: "Spice", zh: "香料" },
   fruit: { en: "Fruit", zh: "水果" },
+  various: { en: "Various", zh: "其他" },
 };
 
 export function t(key: keyof typeof dict, lang: Lang): string {

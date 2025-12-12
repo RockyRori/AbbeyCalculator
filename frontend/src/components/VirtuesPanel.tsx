@@ -20,7 +20,7 @@ export const VirtuesPanel: React.FC<Props> = ({
     if (rawValue === 0) {
       // 特殊规则：0 = 不限范围
       min = 0;
-      max = 100;
+      max = 110;
     } else {
       const base = Math.floor(rawValue / 10) * 10; // 34 -> 30
       min = base;
@@ -54,7 +54,7 @@ export const VirtuesPanel: React.FC<Props> = ({
           <input
             type="range"
             min={0}
-            max={100}
+            max={110}
             value={v.value}
             onChange={(e) =>
               updateRangeFromSlider(

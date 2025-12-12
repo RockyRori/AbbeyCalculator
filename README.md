@@ -1,4 +1,10 @@
 # AbbeyCalculator
+Get your game from steam https://store.steampowered.com/app/2789460/Ale_Abbey__Monastery_Brewery_Tycoon/
+
+This Repo is made by game fan, none related to official. Use for self check only.
+
+
+## Fetch
 ```bash
 git clone git@github.com:RockyRori/AbbeyCalculator.git
 ```
@@ -10,13 +16,11 @@ npm install
 npm run dev
 ```
 ## Use
-http://localhost:\<port\>/AbbeyCalculator
-
 https://rockyrori.github.io/AbbeyCalculator
 
 
 ## Modify
-Add ingredient into ./AbbeyCalculator/frontend/src/data.ts
+Add ingredient into ./AbbeyCalculator/frontend/src/data/*
 
 You may send me a MR (merge request), thanks for help.
 

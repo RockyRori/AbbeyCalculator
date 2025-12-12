@@ -7,15 +7,20 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher";
 import { VirtuesPanel } from "./components/VirtuesPanel";
 import { IngredientsPanel } from "./components/IngredientsPanel";
 import { ResultsPanel } from "./components/ResultsPanel";
+import { SolverSettingsPanel } from "./components/SolverSettingsPanel";
+import { StylePanel } from "./components/StylePanel";
+import { stylePresets } from "./data";
+import { applyVirtueRanges } from "./data";
 import {
   solveRecipes,
   type RecipeSolution,
 } from "./solver";
-import { SolverSettingsPanel } from "./components/SolverSettingsPanel";
 import "./styles.css";
 
 const App: React.FC = () => {
   const [lang, setLang] = useState<Lang>("zh");
+  const [styleId, setStyleId] = useState<string>("__custom__");
+
   const [virtues, setVirtues] = useState(defaultVirtues);
   const [ingredients, setIngredients] = useState(initialIngredients);
 
@@ -50,6 +55,33 @@ const App: React.FC = () => {
 
       <main>
         <section className="left">
+
+          <h2>{lang === "zh" ? "风格" : "Style"}</h2>
+          <StylePanel
+            lang={lang}
+            styles={stylePresets}
+            selectedStyleId={styleId}
+            onChangeStyleId={(id) => {
+              setStyleId(id);
+
+              const preset = stylePresets.find((s) => s.id === id);
+              if (!preset) return; // 选“自定义”不改当前状态
+
+              // 1) 自动设置 4 个指标上下限
+              setVirtues((cur) => applyVirtueRanges(cur, preset.virtues));
+
+              // 2) 自动设置必选配料（仍保留下面手动改必选/可选的能力）
+              const required = new Set(preset.requiredIngredientIds);
+              setIngredients((cur) =>
+                cur.map((ing) =>
+                  required.has(ing.id)
+                    ? { ...ing, required: true, enabled: true }
+                    : { ...ing, required: false } // 风格切换时用预设覆盖必选
+                )
+              );
+            }}
+          />
+
           <h2>{t("virtues", lang)}</h2>
           <VirtuesPanel
             lang={lang}
