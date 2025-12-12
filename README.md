@@ -10,9 +10,9 @@ npm install
 npm run dev
 ```
 ## Use
-http://localhost:\<port\>/Abbey
+http://localhost:\<port\>/AbbeyCalculator
 
-https://rockyrori.github.io/Abbey
+https://rockyrori.github.io/AbbeyCalculator
 
 
 ## Modify
