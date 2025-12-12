@@ -1,0 +1,97 @@
+// src/data.ts
+import type { Ingredient, VirtueTarget } from "./types";
+
+export const defaultVirtues: VirtueTarget[] = [
+  { key: "flavor", value: 10, min: 10, max: 40 },
+  { key: "color", value: 10, min: 10, max: 50 },
+  { key: "strength", value: 10, min: 10, max: 40 },
+  { key: "foam", value: 10, min: 0, max: 100 },
+];
+
+export const initialIngredients: Ingredient[] = [
+  {
+    id: "pale_malt",
+    category: "malt",
+    name: { en: "Pale Malt", zh: "淡色麦芽" },
+    description: {
+      en: "Base malt with light color.",
+      zh: "常见基麦芽，颜色较淡。",
+    },
+    virtues: { flavor: 4, color: 3, strength: 10, foam: 5 },
+    cost: 2,
+    required: true,
+    enabled: true,
+  },
+  // {
+  //   id: "caramel_malt",
+  //   category: "malt",
+  //   name: { en: "Caramel Malt", zh: "焦糖麦芽" },
+  //   virtues: { flavor: 3, color: 3, strength: 0, foam: 1 },
+  //   cost: 2,
+  //   required: false,
+  //   enabled: true,
+  // },
+  // {
+  //   id: "roasted_malt",
+  //   category: "malt",
+  //   name: { en: "Roasted Malt", zh: "烘焙麦芽" },
+  //   virtues: { flavor: 4, color: 5, strength: 0, foam: -1 },
+  //   cost: 3,
+  //   required: false,
+  //   enabled: false,
+  // },
+  {
+    id: "standard_yeast",
+    category: "yeast",
+    name: { en: "Standard Yeast", zh: "标准酵母" },
+    virtues: { flavor: 5, color: 0, strength: -10, foam: -5 },
+    cost: 2,
+    required: true,
+    enabled: true,
+  },
+  // {
+  //   id: "ale_yeast",
+  //   category: "yeast",
+  //   name: { en: "Ale Yeast", zh: "艾尔酵母" },
+  //   virtues: { flavor: 2, color: 0, strength: 3, foam: 2 },
+  //   cost: 2,
+  //   required: true,
+  //   enabled: true,
+  // },
+  // {
+  //   id: "bitter_hops",
+  //   category: "hop",
+  //   name: { en: "Bitter Hops", zh: "苦味酒花" },
+  //   virtues: { flavor: 3, color: 0, strength: 1, foam: 1 },
+  //   cost: 1.5,
+  //   required: false,
+  //   enabled: true,
+  // },
+  // {
+  //   id: "aroma_hops",
+  //   category: "hop",
+  //   name: { en: "Aroma Hops", zh: "香味酒花" },
+  //   virtues: { flavor: 4, color: 0, strength: 0, foam: 1 },
+  //   cost: 1.2,
+  //   required: false,
+  //   enabled: true,
+  // },
+  {
+    id: "eucalyptus_various",
+    category: "various",
+    name: { en: "Eucalyptus", zh: "尤加利(桉树叶)" },
+    virtues: { flavor: 10, color: 0, strength: -2, foam: -5 },
+    cost: 2,
+    required: false,
+    enabled: true,
+  },
+  {
+    id: "gruit_various",
+    category: "various",
+    name: { en: "Gruit", zh: "草药" },
+    virtues: { flavor: 5, color: -3, strength: 0, foam: 0 },
+    cost: 2,
+    required: false,
+    enabled: true,
+  },
+];

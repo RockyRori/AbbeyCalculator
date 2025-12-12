@@ -1,0 +1,175 @@
+/* src/styles.css */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #faf7f2;
+  color: #222;
+}
+
+.app-root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+h2 {
+  margin: 1rem 0 0.5rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 2fr 1.4fr;
+  gap: 1.5rem;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.lang-switcher button {
+  border: 1px solid #ccc;
+  background: #fff;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.lang-switcher button.active {
+  border-color: #c77b30;
+  background: #ffe9c6;
+}
+
+.virtue-row {
+  margin-bottom: 0.75rem;
+}
+
+.virtue-label {
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.bounds {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.bounds label {
+  font-size: 0.8rem;
+}
+
+.bounds input[type="number"] {
+  width: 4rem;
+}
+
+.ingredient-category {
+  margin-bottom: 1rem;
+}
+
+.ingredient-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ingredient-name {
+  margin-left: 0.3rem;
+}
+
+.ingredient-desc {
+  font-size: 0.8rem;
+  color: #555;
+  margin-left: 1.4rem;
+  margin-top: 0.1rem;
+}
+
+.btn-small {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.4rem;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn-solve {
+  margin-top: 1rem;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  border: none;
+  background: #c77b30;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-solve:hover {
+  filter: brightness(0.95);
+}
+
+.tag-required {
+  font-size: 0.7rem;
+  background: #ffe8e8;
+  color: #aa3333;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  margin-left: 0.3rem;
+}
+
+.panel-results ul {
+  padding-left: 1.2rem;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.panel-settings {
+  margin-top: 1rem;
+}
+
+.settings-row {
+  margin-bottom: 0.5rem;
+}
+
+.panel-settings label {
+  font-size: 0.85rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.panel-settings input[type="number"] {
+  width: 4rem;
+}
+
+.settings-hint {
+  font-size: 0.75rem;
+  color: #777;
+  margin-top: 0.5rem;
+}
