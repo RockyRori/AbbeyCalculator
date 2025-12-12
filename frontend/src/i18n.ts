@@ -36,7 +36,7 @@ export const categoryLabels: Record<
   malt: { en: "Malts", zh: "麦芽" },
   yeast: { en: "Yeasts", zh: "酵母" },
   hop: { en: "Hops", zh: "酒花" },
-  sugar: { en: "Sugar & Honey", zh: "糖与蜂蜜" },
+  sugar: { en: "Sugar", zh: "甜品" },
   spice: { en: "Spice", zh: "香料" },
   fruit: { en: "Fruit", zh: "水果" },
   various: { en: "Various", zh: "其他" },
