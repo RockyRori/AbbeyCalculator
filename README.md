@@ -22,7 +22,7 @@ https://rockyrori.github.io/AbbeyCalculator
 ## Modify
 Add ingredient into ./AbbeyCalculator/frontend/src/data/*
 
-You may send me a MR (merge request), thanks for help.
+You may send me a PR (Pull requests), thanks for help.
 
 ## Sample Page
 ![GAP Stacked Bar Chart](CN.png)
